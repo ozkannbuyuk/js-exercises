@@ -1,0 +1,39 @@
+body {
+    background-color: #FFFFFF;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #164965;
+}
+
+input,
+select,
+i {
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+input {
+    width: 120px;
+}
+
+i {
+    color: white;
+}

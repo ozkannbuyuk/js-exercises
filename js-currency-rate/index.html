@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Currency Rate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="main" class="content-wrapper">
+            <input id="amountInput" type="number" placeholder="Amount" />
+            <select id="firstCurrencySelect">
+                <option selected>USD</option>
+                <option>EUR</option>
+                <option>JPY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option>TRY</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+            <i class="fas fa-arrow-right"></i>
+            <select id="secondCurrencySelect">
+                <option>USD</option>
+                <option>USD</option>
+                <option>EUR</option>
+                <option>JPY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option selected>TRY</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+            <input type="number" id="resultInput" readonly placeholder="Result" />
+        </div>
+    </div>
+
+    <script src="currency.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
