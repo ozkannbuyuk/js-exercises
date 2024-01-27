@@ -1,0 +1,56 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow-y: hidden;
+  background-color: #121212;
+}
+
+.calculator {
+  background-color: #ddd;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background-color: #efefef;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.btn.btn--result {
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 20px;
+  background-color: #fff;
+  font-size: 25px;
+}
+
+.btn--number {
+  font-size: 20px;
+}
+
+.btn--operator {
+  color: #ff9900;
+}
+
+.btn--equals {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.btn--clear {
+  background-color: #ff3333;
+  color: #fff;
+}
+
+.btn--dot {
+  font-size: 20px;
+  color: #3333ff;
+}
