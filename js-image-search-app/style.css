@@ -1,0 +1,58 @@
+body {
+    background-color: #0F0F0F;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 0;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-input {
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button-wrapper {
+    margin: 10px 0;
+}
+
+#search-button,
+#clear-button {
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    padding: 5px;
+    color: #fff;
+}
+
+#search-button {
+    background-color: #222222;
+}
+
+#clear-button {
+    background-color: #FF0000;
+}
+
+.image-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-list-wrapper .card {
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    padding: 15px;
+    border-radius: 10px;
+}
