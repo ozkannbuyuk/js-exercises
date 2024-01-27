@@ -1,0 +1,52 @@
+:root {
+  --active-color: #F9A825;
+  --accordion-color: #FDD835;
+  --content-color: #E8F0F2;
+}
+
+body {
+  background-color: #111;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+.accordion-item {
+  background-color: var(--accordion-color);
+  margin-bottom: 1px;
+}
+
+.accordion-title {
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-title:hover {
+  background-color: var(--active-color);
+}
+
+.accordion-title::before {
+  content: "+";
+  position: absolute;
+  right: 20px;
+}
+
+.accordion-content {
+  background-color: var(--content-color);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s;
+}
+
+.accordion-content p {
+  margin: 0;
+  padding: 15px;
+}
+
+.active {
+  background-color: var(--active-color);
+}
+
+.accordion-title.active::before {
+  content: "-";
+}
