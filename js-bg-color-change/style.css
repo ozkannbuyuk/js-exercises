@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.colorBar {
+    width: 60%;
+    margin: auto;
+    height: 20px;
+}
+
+.colorBox {
+    width: 12%;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.colorBox a {
+    display: none;
+}
+
+.grey {
+    background-color: #95a5a6;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+.turquoise {
+    background-color: #1abc9c;
+}
+
+.red {
+    background-color: #ff3838;
+}
+
+.aqua {
+    background-color: #00ffff;
+}
+
+.green {
+    background-color: #32ff7e;
+}
+
+.brown {
+    background-color: #a0522d;
+}
+
+.purple {
+    background-color: #9c88ff;
+}
