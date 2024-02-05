@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Typed.js</title>
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <script src="./typed.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="center">
+        <div id="typed-strings"></div>
+    </div>
+
+    <script>
+        const typedStrings = ['<strong>Typed.js</strong> Text Effect...', '<strong>Typed.js</strong> Text Effect 2...'];
+
+        var typed = new Typed('#typed-strings', {
+            strings: typedStrings,
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
