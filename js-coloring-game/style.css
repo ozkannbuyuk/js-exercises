@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#selected-color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+#color-palette {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#color-palette>div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#rocket-svg {
+    width: 220px;
+    height: 383px;
+    margin-top: 20px;
+}
