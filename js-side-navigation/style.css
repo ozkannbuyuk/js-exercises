@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+p {
+  padding: 10px;
+  font-size: 16px;
+  color: #ccc;
+  text-indent: 20px;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  background-color: #eee;
+  top: 0;
+  left: 0;
+  height: 100%;
+  left: -100%;
+  transition: left 1s;
+  z-index: 11;
+}
+
+nav .close-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 1.25em;
+  position: absolute;
+  right: 0;
+}
+
+nav .close-btn i {
+  cursor: pointer;
+}
+
+.page-content {
+  transition: margin-left 1s;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity .5s;
+}
+
+ul {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: verdana;
+  display: block;
+  margin: 10px;
+  font-size: 1.5em;
+  color: #111;
+  padding: 10px;
+}
+
+ul li a:hover {
+  background-color: #000;
+  color: #eee;
+}
