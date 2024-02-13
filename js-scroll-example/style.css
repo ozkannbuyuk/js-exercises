@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #000;
+}
+
+.scrollable-content {
+  position: relative;
+}
+.scrollable-content .next,
+.scrollable-content .prev {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  transition: 400ms all;
+  pointer-events: none;
+  cursor: pointer;
+  color: var(--icon, #000);
+}
+.scrollable-content.left .prev,
+.scrollable-content.right .next {
+  opacity: 1;
+  pointer-events: auto;
+}
+.scrollable-content .prev {
+  left: 0;
+}
+.scrollable-content .next {
+  right: 0;
+}
+.scrollable-content::before,
+.scrollable-content::after {
+  content: "";
+  width: var(--width, 60px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 400ms all;
+  pointer-events: none;
+}
+.scrollable-content::before {
+  left: 0;
+  background: linear-gradient(to right, var(--shadow, #fff), transparent);
+}
+.scrollable-content::after {
+  right: 0;
+  background: linear-gradient(to left, var(--shadow, #fff), transparent);
+}
+.scrollable-content.left::before {
+  opacity: 1;
+}
+.scrollable-content.right::after {
+  opacity: 1;
+}
+
+.box-container {
+  --icon: #fff;
+  --shadow: #000;
+  --width: 100px;
+  max-width: 600px;
+  width: 100%;
+}
+.box-content {
+  width: 100%;
+  display: flex;
+  gap: 0 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.box-content div {
+  width: 70px;
+  height: 70px;
+  background: #ccc;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-container {
+  --icon: yellow;
+  --shadow: #000;
+  --width: 100px;
+  width: 100%;
+}
+.news-content {
+  width: 100%;
+  display: flex;
+  gap: 0 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.news-content div {
+  width: 300px;
+  height: 300px;
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+@media (max-width: 600px) {
+  .box-content,
+  .news-content {
+    overflow-x: auto;
+  }
+}
