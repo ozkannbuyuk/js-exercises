@@ -1,0 +1,38 @@
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.image {
+  margin-right: 25px;
+  width: 200px;
+  height: 200px;
+  background: darkorange;
+  opacity: 0;
+  transform: translateX(calc(-100% - 25px));
+}
+
+.text {
+  font-size: 40px;
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+.box.active .text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.box.active .image {
+  transform: translateX(0);
+}
